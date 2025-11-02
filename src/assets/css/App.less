@@ -1,0 +1,67 @@
+:root {
+    --grid-bg-border: 3px dashed #bbb;
+    --grid-bg-width-and-height: 88px;
+    --bg-color: #fff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #000;
+}
+
+@import url('WindowsCard.less');
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100dvh;
+    min-width: 100dvw;
+}
+
+.bgGrid {
+    position: fixed;
+    z-index: -1;
+    width: 100dvw;
+    height: 100dvh;
+
+    .Grid {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0;
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .itemGrid-row {
+            .itemGrid-cols {
+                width: var(--grid-bg-width-and-height);
+                height: var(--grid-bg-width-and-height);
+                border-left: var(--grid-bg-border);
+                border-bottom: var(--grid-bg-border);
+            }
+        }
+    }
+
+    .right {
+        right: 0;
+
+        .mask {
+            background-image: linear-gradient(to top right,
+                    var(--bg-color) 50%,
+                    rgb(255 255 255 / 0) 100%);
+        }
+    }
+
+    .left {
+        left: 0;
+
+        .mask {
+            background-image: linear-gradient(to top left,
+                    var(--bg-color) 50%,
+                    rgb(255 255 255 / 0) 100%);
+        }
+    }
+}
