@@ -1,3 +1,5 @@
+![BlessingWall-Vue](https://socialify.git.ci/QNquenan/BlessingWall-Vue/image?custom_description=%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E7%9A%84%E7%A5%9D%E7%A6%8F%E5%A2%99&description=1&font=JetBrains+Mono&forks=1&issues=1&language=1&name=1&owner=1&pattern=Brick+Wall&pulls=1&stargazers=1&theme=Light)
+
 # Blessing Wall 祝福墙
 
 一个基于 Vue 3 和 Vite 构建的动态祝福墙应用，在页面上动态展示各种祝福语卡片。
